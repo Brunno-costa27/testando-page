@@ -13,18 +13,10 @@ body {
     color: #aab2ba;
 }
 
-.container {
-    border-collapse: collapse !important;
-    mso-table-lspace: 0pt;
-    mso-table-rspace: 0pt;
-    margin: 20px auto 10px;
-    padding: 0;
-    height: 100%;
-    width: auto;
-    /* max-width: 100%; */
-}
+
 
 .container-logo {
+
     border-collapse: collapse !important;
     mso-table-lspace: 0pt;
     mso-table-rspace: 0pt;
@@ -71,19 +63,9 @@ body {
     height: auto;
 }
 
+
+
 .container-msg {
-
-    border-collapse: collapse !important;
-    mso-table-lspace: 0pt;
-    mso-table-rspace: 0pt;
-    padding: 32px;
-    width: 100%;
-    max-width: 660px;
-    margin: 0 auto;
-    clear: both;
-}
-
-.container-msg-teste {
 
     border-collapse: collapse !important;
     mso-table-lspace: 0pt;
@@ -160,7 +142,6 @@ body {
 div.text-finish > p:nth-child(1) {
   margin-top: 0px;
   margin-bottom: 8px;
-  /* gap: 38px; */
 }
 
 div.text-finish > p:nth-child(2) {
@@ -191,23 +172,9 @@ div.text-msg > p:nth-child(3) {
   
 }
 
-
-
-/* .text-msg p {
-  border: 1px solid blue;
-} */
-
 .text-msg p span {
-  
   font-weight: 700;
 }
-/* 
-div.text-msg:nth-child(3) > p:nth-child(1) {
-  border: 1px solid green;
-  margin-bottom: 8px;
-
-  
-} */
 
 .container-btn {
 
@@ -215,7 +182,6 @@ div.text-msg:nth-child(3) > p:nth-child(1) {
     mso-table-lspace: 0pt;
     mso-table-rspace: 0pt;
     font-weight: 700;
-    /* padding: 10px 32px; */
     text-align: center;
     margin-top: 48px;
     margin-bottom: 48px;
@@ -237,42 +203,16 @@ div.text-msg:nth-child(3) > p:nth-child(1) {
     text-decoration: none;
     text-align: center;
     letter-spacing: 1.1px;
-    /* padding: 10px 32px; */
     overflow: hidden;
     width: 100%;
     height: 47px;
 }
 
 .container-btn a span {
-
     display: inline-block;
     padding: 10px 32px;
-    /* border-radius: 25px; */
-    /* margin-left: auto;
-    margin-right: auto; */
 }
 
-/* .container-text-secundary {
-  border: 1px solid red;
-
-    border-collapse: collapse !important;
-    mso-table-lspace: 0pt;
-    mso-table-rspace: 0pt;
-    padding: 0 0 20px;
-    color: #2a3e52;
-} */
-
-/* div.text-msg:nth-child(1) {
-  border: 1px solid red;
-
-  padding-top: 0;
-} */
-
-/* div.text-msg:nth-child(1) > p:nth-child(1) {
-  border: 1px solid red;
-
-  margin-top: 10px;
-} */
 .container-link-deadline {
 
   display: flex;
@@ -398,179 +338,130 @@ div.text-msg:nth-child(3) > p:nth-child(1) {
   border-radius: 50%;
 }
 
-/* @media screen and (max-width: 600px) {
-    .container {
-        padding: 10px;
-        border:1px solid red;
-    }
+@media screen and (min-width: 1024px) { // maior que 1024px
 
-    .container-msg {
-      padding-left: 30px;
-      padding-right: 30px;
-      border:1px solid red;
-
-    }
+  .container {
     
-    .container-salutation h1 {
-      border:1px solid red;
+    border-collapse: collapse !important;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+    margin: 20px auto 10px;
+    padding: 0;
+    height: 100%;
+    width: auto;
+  }
+  
+  .page-content {
 
-        font-size: 20px;
-    }
-    
-    .text-msg p {
-        margin: 10px 0;
-        border:1px solid red;
-
-    }
-    
-    .container-btn {
-        margin-top: 10px;
-        border:1px solid red;
-
-    }
-    
-    .container-btn a {
-        font-size: 16px;
-        height: auto;
-        border:1px solid red;
-
-    }
-    
-    .container-text-secundary {
-        padding: 10px 0;
-        border:1px solid red;
-
-    }
-} */
-
+    border-collapse: collapse !important;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+    padding: 32px;
+    width: 100%;
+    max-width: 660px;
+    margin: 0 auto;
+    clear: both;
+}
+}
 
 
 /* Estilos para telas médias (tablets) */
-
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { // até 768px
   .container {
+
       padding: 32px; /* Reduz o espaçamento interno */
-      border:1px solid red;
       margin: 10px auto 5px ;
-
   }
 
-  .container-msg-teste {
-      font-size: 14px; /* Reduz o tamanho da fonte */
-      border:1px solid purple;
-      margin: 10px auto 5px ;
-      padding: 32px;
-
-  }
-
-  .container-msg {
+  .page-content {
     padding: 0px;
     overflow: hidden;
-    /* width: 1005; */
-    border:1px solid green;
-
   }
   
-  .container-salutation h1 {
-    border:1px solid red;
+  .container-msg {
+      font-size: 14px; /* Reduz o tamanho da fonte */
+      margin: 10px auto 5px ;
+      padding: 32px;
+  }
 
+  .container-salutation h1 {
       font-size: 20px;
   }
   
   .text-msg p {
       margin: 10px 0;
-      border:1px solid red;
-
   }
   
   .container-btn {
       margin-top: 48px;
-      border:1px solid red;
-
   }
   
   .container-btn a {
       font-size: 16px;
       height: auto;
-      border:1px solid red;
-
   }
   
   .container-text-secundary {
       padding: 10px 0;
-      border:1px solid red;
-
   }
 
-  .container-img img{
-    width: 380px;
-    height: 350px;
+  .container-img img {
+      width: 380px;
+      height: 350px;
   }
 }
 
 /* Estilos para telas pequenas (smartphones) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) { // De 0px até 480px
   .container {
       padding: 5px; /* Reduz ainda mais o espaçamento interno */
       margin: 5px auto 2px ;
-      border:1px solid blue;
       padding: 16px;
-      
   }
 
-  .container-msg-teste {
+  .page-content {
+      padding: 0px;
+      overflow: hidden;
+  }
+  .container-msg {
       font-size: 14px; /* Reduz o tamanho da fonte */
-      border:1px solid purple;
       margin: 5px auto 2px ;
       padding: 16px;
-
-
   }
 
-  .container-msg {
-    padding: 0px;
-    overflow: hidden;
-    /* width: 1005; */
-    border:1px solid green;
-
-  }
   
   .container-salutation h1 {
-    border:1px solid red;
-    /* padding: 12px; */
-
     font-size: 20px;
   }
   
   .text-msg p {
-      /* margin: 10px 0; */
-      border:1px solid red;
-
+      /* border:1px solid red; */
   }
   
   .container-btn {
       margin-top: 48px;
-      border:1px solid red;
-
   }
   
   .container-btn a {
       font-size: 16px;
-      /* height: auto; */
-      border:1px solid red;
-
   }
   
-  .container-text-secundary {
-      /* padding: 10px 0; */
-      border:1px solid red;
-
-  }
-
   .container-img img{
     width: 230px;
     height: 220px;
+  }
+
+  .social-links a {
+    padding: 8px;
+  }
+
+  .social-links img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .container-link-deadline {
+    padding: 16px 16px;
   }
 }
 
